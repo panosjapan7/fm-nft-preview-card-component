@@ -1,3 +1,156 @@
 body {
-    /* background-color: red; */
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .card {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        
+        width: 380px;
+        height: auto;
+        
+        display: flex;
+        justify-content: center;
+    }
+        .cardContentsContainer {
+            margin-top: 24px;
+        }
+
+            .imageContainer {
+                height: auto;
+                width: 325px;
+                overflow: hidden;
+            }
+                .imageContainer img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            h1 {
+                color: white;
+                font-family: 'Outfit', sans-serif;
+                font-size: 23px;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            .description {
+                color: hsl(215, 51%, 70%);
+                width: 300px;
+                font-family: 'Outfit', sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+
+                margin-top: 22px;
+                margin-bottom: 22px;
+            }
+            .priceDeadlineContainer {
+                display: flex;
+                justify-content: space-between;
+                max-width: 325px;
+            }
+                .priceContainer {
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+                        .ethIconContainer {
+                            width: auto;
+                            height: 20px;
+                        }
+                        .ethIconContainer img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .price {
+                            color: hsl(178, 100%, 50%);
+                            font-family: 'Outfit', sans-serif;
+                            font-weight: 600;
+                            font-size: 16px;
+
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+
+                .deadlineContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                }
+                    .iconClockContainer {
+                        width: auto;
+                        height: 20px;
+                    }
+                        .iconClockContainer img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    .deadline {
+                        color: hsl(215, 51%, 70%);
+                        font-family: 'Outfit', sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-align: end;
+                        /* width: 300px; */
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+
+            .horizontalLine {
+                width: auto;
+                border-bottom: 1px solid grey;
+
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
+            .creatorContainer {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+                .creatorImage {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px white solid;
+                    border-radius: 50%;
+                }
+                    .creatorImage img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                .creator {
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: white;
+                }
+                    span {
+                        display: inline-block;
+                        color: hsl(215, 51%, 70%);
+                        margin-right: 4px;
+                    }
+
+
+/* Footer */
+.attribution {
+    margin-top: 40px;
+    color: white;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 375px) {
+    .card {
+        width: 330px;
+    }
+    .cardContentsContainer {
+        margin-top: 15px;
+    }
+        .imageContainer {
+            width: 300px;
+        }
 }
